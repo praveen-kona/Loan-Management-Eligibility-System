@@ -15,7 +15,7 @@ After basic eligibility is satisfied, the application validates customer documen
 If all validations are successful, the loan is approved and loan-specific document verification is performed.
 
 ---
-### Technologies Used
+## Technologies Used
 
 Java | Core Java | OOP | Interfaces | Abstraction | Inheritance | Polymorphism | Method Overriding | Regular Expressions | Scanner
 
@@ -49,7 +49,7 @@ Java | Core Java | OOP | Interfaces | Abstraction | Inheritance | Polymorphism |
  PersonalLoan  HomeLoan       CarLoan     GoldLoan
  ```
 
-### Design Approach
+## Design Approach
 
 - `Loan` defines the common loan operations.
 - `LoanImpl` provides reusable implementations such as customer input and document validation.
@@ -118,7 +118,7 @@ Final ROI         = 7.5% + 0.5%
 
 The application performs multiple levels of validation before approving a loan.
 
-### Customer Eligibility Validation
+## Customer Eligibility Validation
 
 The system validates:
 
@@ -128,7 +128,7 @@ The system validates:
 
 Each loan type has its own salary and age eligibility criteria.
 
-### Document Validation
+## Document Validation
 
 The application validates:
 
@@ -138,18 +138,18 @@ The application validates:
 
 Regular Expressions (Regex) are used to validate the expected input format.
 
-### PAN Validation Example
+## PAN Validation Example
 
 ```java
 pan.matches("[A-Z]{5}[0-9]{4}[A-Z]{1}");
 ```
 
-### Phone Validation Example
+## Phone Validation Example
 ```java
 phone.matches("[6-9]{1}[0-9]{9}");
 ```
 
-### Application Flow
+## Application Flow
 ```java
                   Customer
                        |
@@ -188,6 +188,8 @@ phone.matches("[6-9]{1}[0-9]{9}");
        Loan Approved
 
 ```
+
+---
 ### Real-World Mapping
 
 This project represents a simplified **banking loan-processing system**, where Java OOP concepts are mapped to real-world loan-processing operations.
@@ -215,7 +217,9 @@ This project represents a simplified **banking loan-processing system**, where J
 | Polymorphism | Flexible processing of different loan types |
 | Regular Expressions | Input/document format validation |
 
-###Future Enhancements
+---
+
+## Future Enhancements
 
 The application can be extended into a full-stack banking application by adding:
 
@@ -232,7 +236,9 @@ Email/SMS notifications
 Loan repayment tracking
 Admin and loan-officer roles
 
-### Key Learning Outcomes
+---
+
+## Key Learning Outcomes
 
 Through this project, I gained practical experience in:
 
@@ -247,7 +253,9 @@ Implementing CIBIL-based risk assessment
 Designing dynamic ROI calculation
 Mapping Java concepts to a real-world banking use case
 
-### Copyright
+---
+
+## Copyright
 
 © 2026 Praveen Kona. All Rights Reserved.
 
