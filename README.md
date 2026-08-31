@@ -16,6 +16,7 @@ If all validations are successful, the loan is approved and loan-specific docume
 
 ---
 ### Technologies Used
+---
 
 Java | Core Java | OOP | Interfaces | Abstraction | Inheritance | Polymorphism | Method Overriding | Regular Expressions | Scanner
 
