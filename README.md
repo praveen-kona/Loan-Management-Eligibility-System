@@ -15,7 +15,7 @@ After basic eligibility is satisfied, the application validates customer documen
 If all validations are successful, the loan is approved and loan-specific document verification is performed.
 
 ---
-###Technologies Used
+### Technologies Used
 
 Java | Core Java | OOP | Interfaces | Abstraction | Inheritance | Polymorphism | Method Overriding | Regular Expressions | Scanner
 ---
