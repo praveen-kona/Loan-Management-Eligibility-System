@@ -69,3 +69,43 @@ LoanManagementEligibilitySystem/
 │       └── GoldLoan.java
 │
 └── README.md
+```
+## CIBIL Risk Assessment
+
+The system performs a simplified CIBIL-based risk assessment before calculating the final loan ROI.
+
+| CIBIL Score | Risk Category | ROI Adjustment |
+|---:|---|---:|
+| 300–549 | High Risk | +4.0% |
+| 550–699 | Moderate Risk | +2.0% |
+| 700–749 | Low Risk | +1.5% |
+| 750–900 | Very Low Risk | +0.5% |
+
+The CIBIL score is also checked during the initial eligibility validation to ensure that it falls within the accepted range of **300–900**.
+
+This demonstrates a simplified **credit-risk assessment and risk-based pricing approach** used in loan processing.
+
+---
+
+## ROI Calculation
+
+Each loan type has its own **base ROI**:
+
+| Loan Type | Base ROI |
+|---|---:|
+| Personal Loan | 8.5% |
+| Home Loan | 6.5% |
+| Car Loan | 7.5% |
+| Gold Loan | 8.5% |
+
+The final ROI is calculated using:
+
+```text
+Final ROI = Base ROI + CIBIL Risk Adjustment
+Base ROI          = 7.5%
+CIBIL Risk        = Very Low Risk
+CIBIL Adjustment  = +0.5%
+
+Final ROI         = 7.5% + 0.5%
+                  = 8.0%
+```
