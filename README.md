@@ -189,17 +189,29 @@ phone.matches("[6-9]{1}[0-9]{9}");
 
 ```
 ### Real-World Mapping
-This POC represents a simplified version of a banking loan-processing workflow.
-```java
-Project Feature	Real-World Concept
-Salary & Age Check	Customer eligibility
-CIBIL Validation	Credit eligibility
-CIBIL Risk Assessment	Credit risk evaluation
-Base ROI	Starting lending rate
-ROI Adjustment	Risk-based pricing
-PAN/Aadhaar Validation	KYC/Document Validation
-Approval/Rejection	Loan Decision
-Document Verification	Loan Processing
 
-```
+This project represents a simplified **banking loan-processing system**, where Java OOP concepts are mapped to real-world loan-processing operations.
+
+| Project Feature | Real-World Banking Concept |
+|---|---|
+| Personal Loan | Personal loan product |
+| Home Loan | Home financing product |
+| Car Loan | Vehicle financing product |
+| Gold Loan | Gold-backed lending product |
+| Salary & Age Validation | Customer eligibility assessment |
+| CIBIL Score Validation | Credit eligibility check |
+| CIBIL Risk Assessment | Credit risk evaluation |
+| Base ROI | Loan product's starting interest rate |
+| CIBIL ROI Adjustment | Risk-based interest pricing |
+| Phone Validation | Customer contact validation |
+| PAN Validation | KYC/document format validation |
+| Aadhaar Validation | Customer identity/document validation |
+| Loan Approval/Rejection | Credit decision |
+| Document Verification | Loan processing and verification |
+| `Loan` Interface | Common loan-processing contract |
+| `LoanImpl` | Reusable common loan-processing logic |
+| Loan Classes | Different banking loan products |
+| Method Overriding | Loan-specific business rules |
+| Polymorphism | Flexible processing of different loan types |
+| Regular Expressions | Input/document format validation |
 
