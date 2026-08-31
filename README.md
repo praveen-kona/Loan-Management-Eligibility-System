@@ -188,4 +188,18 @@ phone.matches("[6-9]{1}[0-9]{9}");
        Loan Approved
 
 ```
+### Real-World Mapping
+This POC represents a simplified version of a banking loan-processing workflow.
+```java
+Project Feature	Real-World Concept
+Salary & Age Check	Customer eligibility
+CIBIL Validation	Credit eligibility
+CIBIL Risk Assessment	Credit risk evaluation
+Base ROI	Starting lending rate
+ROI Adjustment	Risk-based pricing
+PAN/Aadhaar Validation	KYC/Document Validation
+Approval/Rejection	Loan Decision
+Document Verification	Loan Processing
+
+```
 
