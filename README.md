@@ -42,3 +42,30 @@ If all validations are successful, the loan is approved and loan-specific docume
         |          |             |           |
         v          v             v           v
  PersonalLoan  HomeLoan       CarLoan     GoldLoan
+
+
+### Design Approach
+
+- `Loan` defines the common loan operations.
+- `LoanImpl` provides reusable implementations such as customer input and document validation.
+- Individual loan classes extend `LoanImpl`.
+- Each loan class provides its own eligibility rules, base ROI, ROI calculation, and document verification.
+- Method overriding allows different loan types to implement their own ROI behavior.
+
+---
+
+## Project Structure
+
+```text
+LoanManagementEligibilitySystem/
+│
+├── src/
+│   └── projects/
+│       ├── Loan.java
+│       ├── LoanImpl.java
+│       ├── PersonalLoan.java
+│       ├── HomeLoan.java
+│       ├── CarLoan.java
+│       └── GoldLoan.java
+│
+└── README.md
