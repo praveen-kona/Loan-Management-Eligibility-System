@@ -137,9 +137,15 @@ Regular Expressions (Regex) are used to validate the expected input format.
 
 ```java
 pan.matches("[A-Z]{5}[0-9]{4}[A-Z]{1}");
+```
 
-Phone Validation Example
+### Phone Validation Example
+```java
 phone.matches("[6-9]{1}[0-9]{9}");
+```
 
-Aadhaar Validation Example
+### Aadhaar Validation Example
+```java
 aadhar.matches("[1-9]{1}[0-9]{11}");
+```
+
