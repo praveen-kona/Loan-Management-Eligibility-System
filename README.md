@@ -182,8 +182,5 @@ phone.matches("[6-9]{1}[0-9]{9}");
              v
        Loan Approved
 
-### Aadhaar Validation Example
-```java
-aadhar.matches("[1-9]{1}[0-9]{11}");
 ```
 
