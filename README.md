@@ -144,6 +144,44 @@ pan.matches("[A-Z]{5}[0-9]{4}[A-Z]{1}");
 phone.matches("[6-9]{1}[0-9]{9}");
 ```
 
+### Application Flow
+```java
+                  Customer
+                       |
+                       v
+                Enter Loan Details
+                       |
+                       v
+          Salary + Age + CIBIL Validation
+                       |
+                       v
+                Eligibility Check
+                       |
+             +---------+---------+
+             |                   |
+          Eligible            Not Eligible
+             |                   |
+             v                   v
+      Document Validation     Loan Rejected
+             |
+             v
+    Phone + Aadhaar + PAN
+             |
+             v
+       CIBIL Risk Assessment
+             |
+             v
+        ROI Calculation
+             |
+             v
+      Loan Approval Decision
+             |
+             v
+   Loan-Specific Document Check
+             |
+             v
+       Loan Approved
+
 ### Aadhaar Validation Example
 ```java
 aadhar.matches("[1-9]{1}[0-9]{11}");
