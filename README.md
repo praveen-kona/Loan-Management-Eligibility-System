@@ -109,3 +109,37 @@ CIBIL Adjustment  = +0.5%
 Final ROI         = 7.5% + 0.5%
                   = 8.0%
 ```
+## Validation
+
+The application performs multiple levels of validation before approving a loan.
+
+### Customer Eligibility Validation
+
+The system validates:
+
+- Minimum salary requirement
+- Minimum age requirement
+- CIBIL score between 300 and 900
+
+Each loan type has its own salary and age eligibility criteria.
+
+### Document Validation
+
+The application validates:
+
+- Phone number
+- Aadhaar number
+- PAN number
+
+Regular Expressions (Regex) are used to validate the expected input format.
+
+### PAN Validation Example
+
+```java
+pan.matches("[A-Z]{5}[0-9]{4}[A-Z]{1}");
+
+Phone Validation Example
+phone.matches("[6-9]{1}[0-9]{9}");
+
+Aadhaar Validation Example
+aadhar.matches("[1-9]{1}[0-9]{11}");
