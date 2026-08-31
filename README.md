@@ -28,10 +28,9 @@ If all validations are successful, the loan is approved and loan-specific docume
 *CIBIL must be between 300 and 900 for eligibility.*
 
 ---
-
 ## Architecture
 
-```text
+text
                     Loan Interface
                           |
                      implements
@@ -53,7 +52,6 @@ If all validations are successful, the loan is approved and loan-specific docume
 - Method overriding allows different loan types to implement their own ROI behavior.
 
 ---
-
 ## Project Structure
 
 ```text
